@@ -49,7 +49,7 @@ class Test(db.Model):
 # Add a test message to the database as a record
 @app.before_first_request
 def write_test_message():
-    test_user = Test(message="test message from database read successfully")
+    test_user = Test(message="test message from database is read successfully")
     test_user.save()
 
 
