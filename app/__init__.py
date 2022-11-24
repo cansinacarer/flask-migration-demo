@@ -11,7 +11,7 @@ app = Flask(__name__)
 # DB Config
 app.config[
     "SQLALCHEMY_DATABASE_URI"
-] = "postgresql://qzhzootzdkvfdi:19813b61af59c9711899304ccfe2db0cb0c402f317e90754788eb0770ff6aeb9@ec2-54-163-34-107.compute-1.amazonaws.com:5432/db4ejdhq0vnp5r"
+] = "postgresql://flask_db_user:1234@test.cansin.net:5432/flask_db"
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 db = SQLAlchemy(app)
